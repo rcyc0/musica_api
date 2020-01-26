@@ -254,7 +254,6 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   taglib-ruby
-  tzinfo-data
 
 BUNDLED WITH
-   2.1.2
+   2.1.4
