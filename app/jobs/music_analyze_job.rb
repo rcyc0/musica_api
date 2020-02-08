@@ -80,12 +80,3 @@ class MusicAnalyzeJob < ApplicationJob
   def get_mp3_picture(file)
   end
 end
-
-# tag
-#album ⇒ String?
-#artist ⇒ String?
-#comment ⇒ String?
-#genre ⇒ String?
-#title ⇒ String?
-#track ⇒ Integer, 0
-#year ⇒ Integer, 0 
