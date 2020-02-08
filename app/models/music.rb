@@ -1,4 +1,4 @@
-require_relative "#{Rails.root.to_s}/lib/music_info"
+require_relative Rails.root.join 'lib/music_info'
 
 class Music < ApplicationRecord
   belongs_to :album, optional: true
