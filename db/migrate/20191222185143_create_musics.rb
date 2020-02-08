@@ -16,11 +16,3 @@ class CreateMusics < ActiveRecord::Migration[6.0]
     add_index :musics, :title
   end
 end
-
-#album ⇒ String?
-#artist ⇒ String?
-#comment ⇒ String?
-#genre ⇒ String?
-#title ⇒ String?
-#track ⇒ Integer, 0
-#year ⇒ Integer, 0 

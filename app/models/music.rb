@@ -7,7 +7,7 @@ class Music < ApplicationRecord
   has_one_attached :file
   has_one_attached :thumbnail
   has_one_attached :picture
-  
+
   before_create do
     self.album_id = Album.first.id
     self.artist_id = Artist.first.id
