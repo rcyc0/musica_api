@@ -53,6 +53,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   
   gem 'rubocop-rails', require: false
+  gem 'rubocop-rspec', require: false
   gem 'rubocop-performance', require: false
 end
 
