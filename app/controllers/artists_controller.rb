@@ -4,7 +4,7 @@ class ArtistsController < ApplicationController
   # GET /artists
   # GET /artists.json
   def index
-    @artists = Artist.all
+    @artists = Artist.with_attached_picture.eager_load(:music).where('musics.user_id', current_user.id)
   end
 
   # GET /artists/1

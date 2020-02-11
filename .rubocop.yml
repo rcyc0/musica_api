@@ -3,3 +3,6 @@ require:
   - rubocop-rails
   - rubocop-rspec
   - rubocop-performance
+
+Style/Documentation:
+  Enabled: false

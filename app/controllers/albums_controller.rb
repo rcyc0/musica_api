@@ -4,7 +4,7 @@ class AlbumsController < ApplicationController
   # GET /albums
   # GET /albums.json
   def index
-    @albums = Album.all.includes(:music)
+    @albums = Album.with_attached_picture.eager_load(:music).where('musics.user_id', current_user.id)
   end
 
   # GET /albums/1
