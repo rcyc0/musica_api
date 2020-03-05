@@ -69,7 +69,7 @@ GEM
     builder (3.2.4)
     byebug (11.1.1)
     coderay (1.1.2)
-    concurrent-ruby (1.1.5)
+    concurrent-ruby (1.1.6)
     connection_pool (2.2.2)
     crass (1.0.5)
     debug_inspector (0.0.3)
@@ -185,7 +185,7 @@ GEM
     responders (3.0.0)
       actionpack (>= 5.0)
       railties (>= 5.0)
-    ridgepole (0.8.6)
+    ridgepole (0.8.7)
       activerecord (>= 5.0.1, < 6.1)
       diffy
     rspec-core (3.9.0)
@@ -258,7 +258,7 @@ GEM
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
-    zeitwerk (2.2.2)
+    zeitwerk (2.3.0)
 
 PLATFORMS
   ruby
