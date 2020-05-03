@@ -44,7 +44,7 @@ class AlbumsController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_album
-    @album = Album.find(params[:id])
+    @album = Album.with_attached_picture.includes(:music).find(params[:id])
   end
 
   # Never trust parameters from the scary internet, only allow the white list through.
