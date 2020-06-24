@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class MusicsController < ApplicationController
   before_action :set_music, only: [:show, :update, :destroy]
 

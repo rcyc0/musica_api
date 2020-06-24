@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AlbumsController < ApplicationController
   before_action :set_album, only: [:show, :update, :destroy]
 

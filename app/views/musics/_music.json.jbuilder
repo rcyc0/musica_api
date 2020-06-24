@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 json.extract! music, :id, :analyzed_status
 json.filename music.file.filename
 json.artist music.artist.name

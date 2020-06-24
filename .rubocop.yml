@@ -4,7 +4,11 @@ require:
   - rubocop-rspec
   - rubocop-performance
 AllCops:
+  NewCops: enable
   Exclude:
+    - 'config.ru'
+    - 'Rakefile'
+    - 'bin/*'
     - 'db/**/*'
     - 'vendor/bundle/**/*'
 Style/Documentation:

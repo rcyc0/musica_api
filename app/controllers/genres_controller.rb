@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class GenresController < ApplicationController
   before_action :set_genre, only: [:show, :update, :destroy]
 
