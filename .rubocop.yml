@@ -3,6 +3,9 @@ require:
   - rubocop-rails
   - rubocop-rspec
   - rubocop-performance
-
+AllCops:
+  Exclude:
+    - 'db/**/*'
+    - 'vendor/bundle/**/*'
 Style/Documentation:
   Enabled: false
