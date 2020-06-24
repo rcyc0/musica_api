@@ -27,7 +27,8 @@ gem 'rack-cors'
 
 # Authorize
 gem 'devise'
-gem 'devise-jwt'
+gem 'doorkeeper'
+gem 'omniauth'
 
 gem 'taglib-ruby'
 

@@ -1,3 +1,3 @@
 class JwtBlacklist < ApplicationRecord
-  include Devise::JWT::RevocationStrategies::Blacklist
+  #include Devise::JWT::RevocationStrategies::Blacklist
 end
