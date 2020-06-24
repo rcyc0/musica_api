@@ -5,8 +5,7 @@ class SessionsController < Devise::SessionsController
     super { @token = current_token }
   end
 
-  def show
-  end
+  def show; end
 
   private
 

@@ -11,8 +11,7 @@ class AlbumsController < ApplicationController
 
   # GET /albums/1
   # GET /albums/1.json
-  def show
-  end
+  def show; end
 
   # POST /albums
   # POST /albums.json

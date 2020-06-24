@@ -11,8 +11,7 @@ class GenresController < ApplicationController
 
   # GET /genres/1
   # GET /genres/1.json
-  def show
-  end
+  def show; end
 
   # POST /genres
   # POST /genres.json

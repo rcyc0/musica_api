@@ -7,9 +7,7 @@ class MusicsController < ApplicationController
   # GET /musics.json
   def index
     return @musics = current_user.music.with_attached_file.with_attached_picture.includes(:artist, :album) if request.query_parameters.blank?
-    unless request.query_parameters['artist_id'].nil?
-      return @musics = current_user.music.where(artist_id: request.query_parameters['artist_id'])
-    end
+    return @musics = current_user.music.where(artist_id: request.query_parameters['artist_id']) unless request.query_parameters['artist_id'].nil?
 
     unless request.query_parameters['album_id'].nil?
       @musics = current_user.music.with_attached_file.with_attached_picture.includes(:artist, :album).where(album_id: request.query_parameters['album_id'])
@@ -18,8 +16,7 @@ class MusicsController < ApplicationController
 
   # GET /musics/1
   # GET /musics/1.json
-  def show
-  end
+  def show; end
 
   # POST /musics
   # POST /musics.json

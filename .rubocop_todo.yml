@@ -6,63 +6,6 @@
 # Note that changes in the inspected code, or installation of new
 # versions of RuboCop, may require this file to be generated again.
 
-# Offense count: 5
-# Cop supports --auto-correct.
-Layout/EmptyLines:
-  Exclude:
-    - 'config/environments/development.rb'
-    - 'spec/routing/albums_routing_spec.rb'
-    - 'spec/routing/artists_routing_spec.rb'
-    - 'spec/routing/genres_routing_spec.rb'
-    - 'spec/routing/musics_routing_spec.rb'
-
-# Offense count: 16
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: empty_lines, no_empty_lines
-Layout/EmptyLinesAroundBlockBody:
-  Exclude:
-    - 'spec/controllers/albums_controller_spec.rb'
-    - 'spec/controllers/artists_controller_spec.rb'
-    - 'spec/controllers/genres_controller_spec.rb'
-    - 'spec/controllers/musics_controller_spec.rb'
-
-# Offense count: 1
-# Cop supports --auto-correct.
-# Configuration parameters: AllowForAlignment, AllowBeforeTrailingComments, ForceEqualSignAlignment.
-Layout/ExtraSpacing:
-  Exclude:
-    - 'config/environments/production.rb'
-
-# Offense count: 1
-# Cop supports --auto-correct.
-# Configuration parameters: AllowForAlignment, EnforcedStyleForExponentOperator.
-# SupportedStylesForExponentOperator: space, no_space
-Layout/SpaceAroundOperators:
-  Exclude:
-    - 'config/environments/production.rb'
-
-# Offense count: 2
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, EnforcedStyleForEmptyBrackets.
-# SupportedStyles: space, no_space, compact
-# SupportedStylesForEmptyBrackets: space, no_space
-Layout/SpaceInsideArrayLiteralBrackets:
-  Exclude:
-    - 'config/environments/production.rb'
-
-# Offense count: 64
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, EnforcedStyleForEmptyBraces.
-# SupportedStyles: space, no_space, compact
-# SupportedStylesForEmptyBraces: space, no_space
-Layout/SpaceInsideHashLiteralBraces:
-  Exclude:
-    - 'spec/controllers/albums_controller_spec.rb'
-    - 'spec/controllers/artists_controller_spec.rb'
-    - 'spec/controllers/genres_controller_spec.rb'
-    - 'spec/controllers/musics_controller_spec.rb'
-
 # Offense count: 1
 # Cop supports --auto-correct.
 # Configuration parameters: AllowUnusedKeywordArguments, IgnoreEmptyMethods, IgnoreNotImplementedMethods.
@@ -99,13 +42,6 @@ RSpec/MultipleExpectations:
   Max: 3
 
 # Offense count: 1
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: slashes, arguments
-Rails/FilePath:
-  Exclude:
-    - 'config/environments/development.rb'
-
-# Offense count: 1
 Security/Eval:
   Exclude:
     - 'app/jobs/music_analyze_job.rb'
@@ -116,20 +52,6 @@ Style/BlockComments:
   Exclude:
     - 'spec/spec_helper.rb'
 
-# Offense count: 20
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, ProceduralMethods, FunctionalMethods, IgnoredMethods, AllowBracesOnProceduralOneLiners, BracesRequiredMethods.
-# SupportedStyles: line_count_based, semantic, braces_for_chaining, always_braces
-# ProceduralMethods: benchmark, bm, bmbm, create, each_with_object, measure, new, realtime, tap, with_object
-# FunctionalMethods: let, let!, subject, watch
-# IgnoredMethods: lambda, proc, it
-Style/BlockDelimiters:
-  Exclude:
-    - 'spec/controllers/albums_controller_spec.rb'
-    - 'spec/controllers/artists_controller_spec.rb'
-    - 'spec/controllers/genres_controller_spec.rb'
-    - 'spec/controllers/musics_controller_spec.rb'
-
 # Offense count: 2
 # Cop supports --auto-correct.
 # Configuration parameters: AutoCorrect, EnforcedStyle.
@@ -139,38 +61,9 @@ Style/ClassAndModuleChildren:
     - 'test/channels/application_cable/connection_test.rb'
     - 'test/test_helper.rb'
 
-# Offense count: 5
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: compact, expanded
-Style/EmptyMethod:
-  Exclude:
-    - 'app/controllers/albums_controller.rb'
-    - 'app/controllers/artists_controller.rb'
-    - 'app/controllers/genres_controller.rb'
-    - 'app/controllers/musics_controller.rb'
-    - 'app/controllers/sessions_controller.rb'
-
 # Offense count: 1
 # Configuration parameters: MinBodyLength.
 Style/GuardClause:
-  Exclude:
-    - 'app/controllers/musics_controller.rb'
-
-# Offense count: 40
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, UseHashRocketsWithSymbolValues, PreferHashRocketsForNonAlnumEndingSymbols.
-# SupportedStyles: ruby19, hash_rockets, no_mixed_keys, ruby19_no_mixed_keys
-Style/HashSyntax:
-  Exclude:
-    - 'spec/routing/albums_routing_spec.rb'
-    - 'spec/routing/artists_routing_spec.rb'
-    - 'spec/routing/genres_routing_spec.rb'
-    - 'spec/routing/musics_routing_spec.rb'
-
-# Offense count: 1
-# Cop supports --auto-correct.
-Style/IfUnlessModifier:
   Exclude:
     - 'app/controllers/musics_controller.rb'
 
@@ -180,31 +73,6 @@ Style/IfUnlessModifier:
 # SupportedStyles: call, braces
 Style/LambdaCall:
   EnforcedStyle: braces
-
-# Offense count: 222
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, ConsistentQuotesInMultiline.
-# SupportedStyles: single_quotes, double_quotes
-Style/StringLiterals:
-  Exclude:
-    - 'config/application.rb'
-    - 'config/environments/production.rb'
-    - 'config/puma.rb'
-    - 'config/spring.rb'
-    - 'spec/controllers/albums_controller_spec.rb'
-    - 'spec/controllers/artists_controller_spec.rb'
-    - 'spec/controllers/genres_controller_spec.rb'
-    - 'spec/controllers/musics_controller_spec.rb'
-    - 'spec/rails_helper.rb'
-    - 'spec/requests/albums_spec.rb'
-    - 'spec/requests/artists_spec.rb'
-    - 'spec/requests/genres_spec.rb'
-    - 'spec/requests/musics_spec.rb'
-    - 'spec/routing/albums_routing_spec.rb'
-    - 'spec/routing/artists_routing_spec.rb'
-    - 'spec/routing/genres_routing_spec.rb'
-    - 'spec/routing/musics_routing_spec.rb'
-    - 'test/channels/application_cable/connection_test.rb'
 
 # Offense count: 6
 # Cop supports --auto-correct.

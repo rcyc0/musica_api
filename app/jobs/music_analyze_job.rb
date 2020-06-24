@@ -6,7 +6,7 @@ require 'mime/types'
 class MusicAnalyzeJob < ApplicationJob
   queue_as :default
 
-  def perform(*args)
+  def perform(*_args)
     music_list = Music.where(analyzed_status: 1)
     music_list.each do |m|
       m.file.open do |f|

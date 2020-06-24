@@ -11,8 +11,7 @@ class ArtistsController < ApplicationController
 
   # GET /artists/1
   # GET /artists/1.json
-  def show
-  end
+  def show; end
 
   # POST /artists
   # POST /artists.json
